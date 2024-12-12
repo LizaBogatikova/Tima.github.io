@@ -1,0 +1,382 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+}
+
+/* glob */
+
+p {
+  color: green;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: square;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title-2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+}
+
+.section-d {
+  margin-bottom: 50px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+/* header */
+
+.header {
+  margin-bottom: 25px;
+}
+
+.nav {
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 45px;
+}
+
+.nav-list-link {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.nav-list-link:hover {
+  color: blue;
+}
+
+
+/* home */
+
+.special-main {
+  background: linear-gradient(rbga());
+}
+
+.special-img {
+  border-radius: 15px;
+}
+
+/* news */
+
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-photo {
+  border-radius: 15px;
+}
+
+.block-preview {
+  display: flex;
+  align-items: center;
+}
+
+.news-photo {
+  margin-right: 15px;
+  max-width: 220px;
+  height: auto;
+}
+
+.articles-title {
+  font-size: 18px;
+}
+
+.platforma {
+  opacity: 50%;
+}
+
+.new-list-item {
+  margin-bottom: 20px;
+}
+
+.articles-title:hover {
+  color: red;
+}
+
+/* rate */
+
+.tablica {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th,td {
+  border: 1px solid black;
+  padding: 25px;
+  text-align: center;
+}
+
+caption {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+caption:hover {
+  color: blue;
+}
+
+.t-first {
+  background-color:aqua;
+}
+
+.t-second {
+  background-color: red;
+}
+
+.btn {
+  margin: 10px 10px 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #2575fc;
+  cursor: pointer;
+}
+
+/* демострация vue js */
+
+.games-list {
+  display: flex;
+  gap: 20px;
+}
+
+.game-item {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.game-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+  max-width: 120px;
+  text-align: center;
+}
+
+/* gradient */ 
+
+.gradient-section {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gradient-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.gradient-text {
+  font-size: 1.2em;
+}
+
+.joystick-container {
+  position: relative;
+  bottom: 0;
+}
+
+.joystick {
+  width: 100px;
+  animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
+}
+
+
+/* footer */
+.footer {
+  margin-bottom: 30px;
+}
+
+.footer-general {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  background-color: #333333;
+  border-radius: 15px;
+}
+
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left-footer-text {
+  margin: 0;
+  margin-bottom: 37px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 190%;
+  width: 302px;
+  height: 60px;
+}
+
+.footer-text-second {
+  margin-bottom: 40px;
+  width: 302px;
+  height: 90px;
+}
+
+.user-agreement {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  outline: none;
+}
+
+.user-agreement:hover {
+  color: #808080;
+}
+
+.user-agreement:focus {
+  outline: 1px solid #808080;
+  outline-offset: 5px;
+}
+
+.right-footer-item {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.right-footer-text {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.footer-contact {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-contact:focus {
+  outline: 1px solid #808080;
+  outline-offset: 3px;
+}
+
+.footer-contact:hover {
+  color: #808080;
+}
+
+.footer-contact:active,
+.footer-contact:focus:active {
+  outline: none;
+  color: #808080;
+}
+
+.footer-phone {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.footer-email {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-item {
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.social-item:last-child {
+  margin-bottom: 0;
+}
+
+.social-link {
+  outline: none;
+}
+
+.social-link svg {
+  fill: #999999;
+}
+
+.social-link:focus svg {
+  fill: #808080;
+}
+
+.social-link:hover svg {
+  fill: #808080;
+}
+
+.social-link:active svg {
+  fill: #808080;
+}
